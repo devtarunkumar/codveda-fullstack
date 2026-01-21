@@ -1,7 +1,9 @@
-let users = [1,2,3,4,5, "tarun"]; // In-memory user storage
+let users = []; // In-memory user storage
 const express = require('express');
 const app = express();
 const port = 3000;
+const cors = require("cors");
+app.use(cors());
 
 app.use(express.json()); // json data read krne k liye middleware
 
